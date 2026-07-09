@@ -1,2 +1,5 @@
 data/
-data/
+ml-env/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
