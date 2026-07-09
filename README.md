@@ -113,6 +113,8 @@ commercially viable false positive rate.
 ---
 
 ## Project Structure
+
+```
 credit-risk-scorer/
 ├── notebooks/
 │   ├── 01_eda.ipynb                      # EDA and findings
@@ -133,6 +135,7 @@ credit-risk-scorer/
 ├── app/
 │   └── app.py                            # Streamlit web application
 └── requirements.txt
+```
 
 ---
 
