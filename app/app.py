@@ -4,8 +4,10 @@ import numpy as np
 import joblib
 
 # Load model and feature names
-model = joblib.load('/Users/darshanv/credit-risk-scorer/models/champion_lightgbm_v2.pkl')
-feature_names = joblib.load('/Users/darshanv/credit-risk-scorer/models/feature_names_v2.pkl')
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+model = joblib.load(os.path.join(BASE_DIR, 'models', 'champion_lightgbm_v2.pkl'))
+feature_names = joblib.load(os.path.join(BASE_DIR, 'models', 'feature_names_v2.pkl'))
 
 st.set_page_config(page_title="Credit Risk Scorer", page_icon="🏦", layout="centered")
 
